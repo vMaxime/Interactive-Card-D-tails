@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+  <!--0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm-->
+
+  
+  <main class="container">
+    <aside>
+      a
+    </aside>
+    <section>
+      <form>
+        <div class="column">
+          <label>CARDHOLDER NAME</label>
+          <input placeholder="e.g. Jale Appleseed">
+        </div>
+        <div class="column">
+          <label>CARDHOLDER NUMBER</label>
+          <input placeholder="e.g. 1234 5678 9123 0000">
+          <label class="error display-none">Wrong format, numbers only</label>
+        </div>
+        <div class="row gap-20">
+          <div class="column expiration-date width-50">
+            <label>EXP. DATE (MM/YY)</label>
+            <div class="row">
+              <input placeholder="MM">
+              <input placeholder="YY">
+            </div>
+          </div>
+          <div class="column width-50">
+            <label>CVC</label>
+            <input placeholder="e.g. 123">
+          </div>
+        </div>
+        <button>
+          Confirm
+        </button>
+      </form>
+      <!-- Completed state start -->
+      <div id="completed" class="display-none">
+        <p>Thank you!</p>
+        <p>We've added your card details</p>
+        <p>Continue</p>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution container">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw/hub/interactive-card-details-form-I5uTvjBxTM" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/maxime-verdonck/">Maxime Verdonck</a>.
+  </footer>
+</body>
+</html>

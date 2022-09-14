@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Space-Grotesk-Regular';
+    src: url(../fonts/space_grotesk/static/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-SemiBold';
+    src: url(../fonts/space_grotesk/static/SpaceGrotesk-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Space-Grotesk-Medium';
+    src: url(../fonts/space_grotesk/static/SpaceGrotesk-Medium.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Space-Grotesk-Regular', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: row;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+}
+
+main aside {
+    width: 40%;
+    background: url(../images/bg-main-desktop.png) no-repeat;
+    background-size: cover;
+}
+
+main section {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 25px;
+}
+
+form input {
+    font-family: 'Space-Grotesk-SemiBold', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 12px 12px;
+    width: 100%;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 8px;
+}
+
+form input::placeholder {
+    font-family: 'Space-Grotesk-Medium', Arial, Helvetica, sans-serif;
+    color: hsl(279, 6%, 55%);
+    font-size: 16px;
+}
+
+form label {
+    font-family: 'Space-Grotesk-SemiBold', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+form button {
+    color: #FFF;
+    font-family: 'Space-Grotesk-Medium', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: hsl(278, 68%, 11%);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.expiration-date .row {
+    gap: 15px;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+input.error, input.error:focus {
+    border: 1px solid red;
+}
+
+label.error {
+    font-family: 'Space-Grotesk-Regular', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.attribution { font-size: 12px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.display-none { display: none; }
